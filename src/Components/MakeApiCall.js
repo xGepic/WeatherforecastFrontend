@@ -25,7 +25,8 @@ class MakeApiCall extends Component {
   static renderTable(myData) {
     return (
       <>
-        <h1>API Data</h1>
+        <h1>Continuous Integration - API Data</h1>
+        <br></br>
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -39,8 +40,8 @@ class MakeApiCall extends Component {
             {myData.map((forecasts) => (
               <tr key={forecasts.date}>
                 <td>{forecasts.date}</td>
-                <td>{forecasts.temperatureC}</td>
-                <td>{forecasts.temperatureF}</td>
+                <td>{forecasts.temperatureC}°C</td>
+                <td>{forecasts.temperatureF}°F</td>
                 <td>{forecasts.summary}</td>
               </tr>
             ))}
